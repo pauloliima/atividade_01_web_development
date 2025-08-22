@@ -11,11 +11,11 @@
                     <form>
                         <div class="row">
                             <label>Altura:</label>
-                            <input type="text" id="altura" placeholder="Digite sua altura (em metros)" />
+                            <input type="text" id="altura" oninput="formatarValor(this)" placeholder="Digite sua altura (em metros)" />
                         </div>
                         <div class="row">
                             <label>Peso:</label>
-                            <input type="text" id="peso" placeholder="Digite seu peso (em kg)" />
+                            <input type="text" id="peso" oninput="formatarValor(this)" placeholder="Digite seu peso (em kg)" />
                         </div>
                         <div class="row">
                             <button type="submit" id="calcular">Calcular IMC</button>

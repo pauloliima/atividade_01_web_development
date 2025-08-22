@@ -7,6 +7,17 @@ function Pessoa(altura, peso) {
     this.peso = peso;
 }
 
+function formatarValor(input) {
+    let numeros = input.value.replace(/\D/g, '');
+    if (!numeros || numeros.length === 0) {
+        input.value = '';
+        return;
+    }
+    let valorNumerico = parseInt(numeros) / 100;
+    input.value = valorNumerico.toFixed(2);
+}
+
+
 function TabelaIMC(altura, peso) {
     Pessoa.call(this, altura, peso);
     this.imc = function () {
